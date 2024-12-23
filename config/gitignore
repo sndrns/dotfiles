@@ -4,6 +4,7 @@
 # python
 .cache/
 *.pyc
+pyrightconfig.json
 
 # node
 node_modules/
