@@ -95,6 +95,8 @@ zplug load
 export LESS="--no-init --quit-if-one-screen --raw-control-chars"
 
 export PATH=$HOME/.local/bin:$PATH
+export ASDF_DATA_DIR=/home/snny/.asdf
+export PATH="$ASDF_DATA_DIR/shims:$PATH"
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
