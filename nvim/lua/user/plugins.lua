@@ -41,33 +41,33 @@ packer.init {
 -- Install your plugins here
 return packer.startup(function(use)
   -- My plugins here
-  use "wbthomason/packer.nvim" -- Have packer manage itself
-  use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim in Neovim
-  use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
+  use "wbthomason/packer.nvim"       -- Have packer manage itself
+  use "nvim-lua/popup.nvim"          -- An implementation of the Popup API from vim in Neovim
+  use "nvim-lua/plenary.nvim"        -- Useful lua functions used ny lots of plugins
   use "kyazdani42/nvim-web-devicons" -- icons for nvim-tree, bufferline, lualine, etc...
-  use "lewis6991/impatient.nvim" -- speed up nvim loading
+  use "lewis6991/impatient.nvim"     -- speed up nvim loading
 
   -- colorschemes
   use "rebelot/kanagawa.nvim"
 
   -- cmp plugins
-  use "hrsh7th/nvim-cmp" -- The completion plugin
-  use "hrsh7th/cmp-buffer" -- buffer completions
-  use "hrsh7th/cmp-path" -- path completions
-  use "hrsh7th/cmp-cmdline" -- cmdline completions
+  use "hrsh7th/nvim-cmp"         -- The completion plugin
+  use "hrsh7th/cmp-buffer"       -- buffer completions
+  use "hrsh7th/cmp-path"         -- path completions
+  use "hrsh7th/cmp-cmdline"      -- cmdline completions
   use "saadparwaiz1/cmp_luasnip" -- snippet completions
-  use "hrsh7th/cmp-nvim-lua" -- nvim specific Lua completions
-  use "hrsh7th/cmp-nvim-lsp" -- LSP completions
+  use "hrsh7th/cmp-nvim-lua"     -- nvim specific Lua completions
+  use "hrsh7th/cmp-nvim-lsp"     -- LSP completions
 
   -- snippets
-  use "L3MON4D3/LuaSnip" --snippet engine
+  use "L3MON4D3/LuaSnip"             --snippet engine
   use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
 
   -- external tooling
   use "williamboman/mason.nvim" -- neovim external tooling package manager
 
   -- LSP
-  use "neovim/nvim-lspconfig" -- enable LSP
+  use "neovim/nvim-lspconfig"             -- enable LSP
   use "williamboman/mason-lspconfig.nvim" -- simple to use language server installer
   use "nvimtools/none-ls.nvim"            -- formatters and linterg
 
@@ -76,7 +76,7 @@ return packer.startup(function(use)
   use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' } -- native sorter for telescope
 
   -- Treesitter
-  use { "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" }
+  use { "nvim-treesitter/nvim-treesitter", branch = 'master', lazy = false, run = ":TSUpdate" }
   use { "HiPhish/rainbow-delimiters.nvim", tag = "v0.9.1" } -- rainbow parentheses
 
   -- Autopairs, integrates with both cmp and treesitter
@@ -102,13 +102,13 @@ return packer.startup(function(use)
   use "akinsho/toggleterm.nvim"
 
   -- indentline
-  use {"lukas-reineke/indent-blankline.nvim", tag="v2.20.8"}
+  use { "lukas-reineke/indent-blankline.nvim", tag = "v2.20.8" }
 
   -- alternate file projections
   use "tpope/vim-projectionist"
 
   -- testing
-  use {"nvim-neotest/neotest",
+  use { "nvim-neotest/neotest",
     requires = {
       "nvim-neotest/nvim-nio",
       "antoinemadec/FixCursorHold.nvim",
@@ -137,7 +137,7 @@ return packer.startup(function(use)
   }
 
   -- lightbulb indication of available code actions
-  use {"kosayoda/nvim-lightbulb", requires = "antoinemadec/FixCursorHold.nvim",}
+  use { "kosayoda/nvim-lightbulb", requires = "antoinemadec/FixCursorHold.nvim", }
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
