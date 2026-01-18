@@ -121,6 +121,9 @@ return packer.startup(function(use)
   -- editorconfig
   use "gpanders/editorconfig.nvim"
 
+  -- formatting
+  use "stevearc/conform.nvim"
+
   -- fsharp syntax highlighting
   use "adelarsq/neofsharp.vim"
 
