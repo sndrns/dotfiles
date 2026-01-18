@@ -77,7 +77,7 @@ return packer.startup(function(use)
 
   -- Treesitter
   use { "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" }
-  use { "p00f/nvim-ts-rainbow" } -- rainbow parentheses
+  use { "HiPhish/rainbow-delimiters.nvim", tag = "v0.9.1" } -- rainbow parentheses
 
   -- Autopairs, integrates with both cmp and treesitter
   use "windwp/nvim-autopairs"
