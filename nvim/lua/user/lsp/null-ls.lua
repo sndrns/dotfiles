@@ -23,7 +23,6 @@ null_ls.setup {
 
     -- python
     diagnostics.mypy,
-    formatting.black,
 
     -- terraform
     formatting.terraform_fmt,
